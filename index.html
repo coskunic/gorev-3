@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="ENG" />
+    <meta name="keywords" content="zodiac, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pieces" />
+    <meta name="description" content="This is a zodiac gallery including zodiac signs and images." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Zodiac Gallery</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .modal {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-dialog {
+            max-width: 25vw;
+        }
+
+        .modal-content {
+            background: none;
+            border: none;
+        }
+
+        .modal fade {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #zodiac-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #zodiac {
+            height: 50px;
+            width: 50px;
+            margin: 15px;
+            animation: rotate 12s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="zodiac-container">
+            <img src="zodiac.png" alt="Alternate Text" id="zodiac" />
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="ariesSymbol.png" class="img-fluid" alt="Aries Symbol" data-toggle="modal" data-target="#modal1">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="taurusSymbol.png" class="img-fluid" alt="Taurus Symbol" data-toggle="modal" data-target="#modal2">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="geminiSymbol.png" class="img-fluid" alt="Gemini Symbol" data-toggle="modal" data-target="#modal3">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="cancerSymbol.png" class="img-fluid" alt="Cancer Symbol" data-toggle="modal" data-target="#modal4">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="leoSymbol.png" class="img-fluid" alt="Leo Symbol" data-toggle="modal" data-target="#modal5">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="virgoSymbol.png" class="img-fluid" alt="Virgo Symbol" data-toggle="modal" data-target="#modal6">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="libraSymbol.png" class="img-fluid" alt="Libra Symbol" data-toggle="modal" data-target="#modal7">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="scorpioSymbol.png" class="img-fluid" alt="Scorpio Symbol" data-toggle="modal" data-target="#modal8">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="sagittariusSymbol.png" class="img-fluid" alt="Sagittarius Symbol" data-toggle="modal" data-target="#modal9">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="capricornSymbol.png" class="img-fluid" alt="Capricorn Symbol" data-toggle="modal" data-target="#modal10">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="aquariusSymbol.png" class="img-fluid" alt="Aquarius Symbol" data-toggle="modal" data-target="#modal11">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 gallery-item mb-4">
+                    <img src="piecesSymbol.png" class="img-fluid" alt="Pieces Symbol" data-toggle="modal" data-target="#modal12">
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="ariesImage.png" class="img-fluid" alt="Aries Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="taurusImage.png" class="img-fluid" alt="Taurus Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="geminiImage.png" class="img-fluid" alt="Gemini Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="cancerImage.png" class="img-fluid" alt="Cancer Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="leoImage.png" class="img-fluid" alt="Leo Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="virgoImage.png" class="img-fluid" alt="Virgo Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="libraImage.png" class="img-fluid" alt="Libra Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="scorpioImage.png" class="img-fluid" alt="Scorpio Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="sagittariusImage.png" class="img-fluid" alt="Sagittarius Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="capricornImage.png" class="img-fluid" alt="Capricorn Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="aquariusImage.png" class="img-fluid" alt="Aquarius Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center p-0">
+                            <img src="piecesImage.png" class="img-fluid" alt="Pieces Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $('#modal1, #modal2, #modal3, #modal4, #modal5, #modal6, #modal7, #modal8, #modal9, #modal10, #modal11, #modal12').on('show.bs.modal', function () {
+            $('.row').hide();
+        });
+
+        $('#modal1, #modal2, #modal3, #modal4, #modal5, #modal6, #modal7, #modal8, #modal9, #modal10, #modal11, #modal12').on('hidden.bs.modal', function () {
+            $('.row').show();
+        });
+    </script>
+
+</body>
+</html>
